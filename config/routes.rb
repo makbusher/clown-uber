@@ -8,4 +8,8 @@ Rails.application.routes.draw do
   post "/clowns" => "clowns#create"
   patch "/clowns/:id" => "clowns#update"
   delete "/clowns/:id" => "clowns#destroy"
+
+  # get "/users" => "users#index"
+  # get "/users/:id" => "users#show"
+  post "/users" => "users#create"
 end
