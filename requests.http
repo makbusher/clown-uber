@@ -1,0 +1,25 @@
+GET http://localhost:3000/clowns.json
+
+### show clown
+GET http://localhost:3000/clowns/3.json
+
+### create clown
+POST http://localhost:3000/clowns.json
+Content-Type: application/json
+
+{
+  "name": "Jimbo",
+  "specialty": "Tap Dancing"
+}
+
+### update clown 
+PATCH http://localhost:3000/clowns/1.json
+Content-Type: application/json
+
+{
+  "name": "Bozo",
+  "specialty": "face painting"
+}
+
+### delete clown
+DELETE http://localhost:3000/clowns/5.json
